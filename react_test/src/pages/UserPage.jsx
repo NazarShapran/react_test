@@ -31,7 +31,9 @@ const UserPage = () => {
         placeholder="Search by first name"
       />
 
-      <button onClick={() => fetchData()}>Load Users</button>
+      <button style={{ marginTop: "10px" }} onClick={() => fetchData()}>
+        Load Users
+      </button>
       <UserTable
         users={filteredUsers}
         setUsers={setUser}
